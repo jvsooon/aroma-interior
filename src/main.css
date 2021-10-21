@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 82em;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+}
