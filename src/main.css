@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Poppins:wght@300;400&display=swap");
+
+:root {
+    --clr-black: #19240c;
+    --clr-green: #679136;
+    --clr-lightgreen: #f3f7ec;
+}
+
 *,
 *::before,
 *::after {
@@ -7,6 +16,7 @@
 body {
     margin: 0 auto;
     font-size: 16px;
+    color: var(--clr-black);
 }
 
 .container {
@@ -18,8 +28,23 @@ body {
 h1,
 h2,
 h3,
+h4,
+a,
+button {
+    font-family: "Merriweather", serif;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
 p {
     margin: 0;
+    line-height: 1.5;
 }
 
 img {
@@ -30,4 +55,225 @@ img {
 .btn {
     display: inline-block;
     border: none;
+    background: var(--clr-green);
+    color: #ffffff;
+    padding: 1em 2em;
+    border-radius: 0.3em;
+    filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.4));
+    transition: transform 250ms ease-in-out;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: translateY(-0.5em);
+}
+
+/* Helpers */
+.section--spacing {
+    padding: 2em 0;
+}
+
+.text--green {
+    color: var(--clr-green);
+}
+
+.text--white {
+    color: #ffffff;
+}
+
+.title--spacing {
+    margin-bottom: 0.5em;
+}
+
+.title--h1 {
+    font-size: clamp(2rem, 1.3997rem + 2.5614vw, 3.5rem);
+}
+
+.title--h2 {
+    font-size: 2rem;
+}
+
+.description {
+    margin-bottom: 2em;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Header Section */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+    position: relative;
+}
+
+.brand {
+    font-weight: 700;
+    font-size: 24px;
+    font-family: "Merriweather", serif;
+}
+
+.svg-icon {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+    fill: #000000;
+}
+
+.svg-icon circle {
+    stroke: #000000;
+    stroke-width: 1;
+}
+
+.navbar__nav-container {
+    display: none;
+}
+
+ul {
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    margin-left: -10%;
+}
+
+li {
+    margin: 2em 0;
+    transition: transform 250ms ease-in-out;
+}
+
+li:hover {
+    transform: translateY(-0.5em);
+}
+
+a {
+    text-decoration: none;
+    color: var(--clr-black);
+}
+
+.nav--active {
+    z-index: 1;
+    display: block;
+    position: fixed;
+    background: #ffffff;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.menu-btn-close {
+    position: fixed;
+    right: 5%;
+    margin-top: 1em;
+}
+
+/* Hero Section */
+.section-hero {
+    background: var(--clr-lightgreen);
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-content {
+    margin: 0 5%;
+    padding: 3em 0;
+}
+
+h4 {
+    margin-bottom: 0.25em;
+}
+
+/* Logos Section */
+.logo-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-container img {
+    margin: 1.5em 1.5em;
+    width: 10em;
+    object-fit: contain;
+}
+
+/* Products Section */
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.15));
+    background: #ffffff;
+    margin: 1.5em 1em;
+    min-width: 18em;
+    max-width: 20em;
+}
+
+.product img {
+    min-height: 18em;
+    max-height: 20em;
+    object-fit: cover;
+}
+
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2em 1em;
+}
+
+/* About Us Section */
+.about-img-container {
+    margin-top: 3em;
+}
+
+/* Newsletter Section */
+.search-input {
+    text-align: center;
+    height: 43px;
+    outline: none;
+    border: none;
+    background: var(--clr-lightgreen);
+    padding: 0 1.5em;
+    font-size: 1rem;
+    margin: 1em 0.5em;
+    border-radius: 0.3em;
+}
+
+/* Footer Section */
+footer {
+    background: var(--clr-black);
+}
+
+.brand--spacing {
+    padding: 2em 0;
+}
+
+.footer__links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    padding-bottom: 3em;
+    margin: 0 auto;
+}
+
+.footer__links li {
+    margin: 1em 1em;
+}
+
+.footer__links a {
+    color: #ffffff;
 }

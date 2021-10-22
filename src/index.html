@@ -1,12 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aroma Interior</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Aroma Interior</title>
+        <link rel="stylesheet" href="main.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="container">
+            <nav class="navbar">
+                <div class="brand">Aro<span class="text--green">ma</span></div>
+                <div class="menu-btn">
+                    <svg class="svg-icon" viewBox="0 0 20 20">
+                        <path
+                            fill="currentColor"
+                            d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314
+                    c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743
+                    s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314
+                    c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"
+                        ></path>
+                    </svg>
+                </div>
+                <div class="navbar__nav-container">
+                    <div class="menu-btn-close">
+                        <svg class="svg-icon" viewBox="0 0 20 20">
+                            <path
+                                fill="currentColor"
+                                d="M11.469,10l7.08-7.08c0.406-0.406,0.406-1.064,0-1.469c-0.406-0.406-1.063-0.406-1.469,0L10,8.53l-7.081-7.08
+                    c-0.406-0.406-1.064-0.406-1.469,0c-0.406,0.406-0.406,1.063,0,1.469L8.531,10L1.45,17.081c-0.406,0.406-0.406,1.064,0,1.469
+                    c0.203,0.203,0.469,0.304,0.735,0.304c0.266,0,0.531-0.101,0.735-0.304L10,11.469l7.08,7.081c0.203,0.203,0.469,0.304,0.735,0.304
+                    c0.267,0,0.532-0.101,0.735-0.304c0.406-0.406,0.406-1.064,0-1.469L11.469,10z"
+                            ></path>
+                        </svg>
+                    </div>
+                    <ul>
+                        <li><a href="#0" class="text--green">Home</a></li>
+                        <li><a href="#0">Products</a></li>
+                        <li><a href="#0">About Us</a></li>
+                        <li><a href="#0">Contact Us</a></li>
+                        <li><a href="#0">Sign Up</a></li>
+                        <li><button class="btn">Login</button></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="section-hero">
+            <div class="hero-content">
+                <h4 class="text--green">Get 20% off</h4>
+                <h1 class="title--h1 title--spacing">
+                    We care<br />about your interior
+                </h1>
+                <p class="description">
+                    There are many variations of passages of Lorem Ipsum
+                    available, but the majority have suffered alteration in some
+                    form, by injected humour, or randomised words which don't
+                    look even slightly believable.
+                </p>
+                <button class="btn">Shop Now</button>
+            </div>
+            <div class="hero-img">
+                <img
+                    src="./imgs/hero.png"
+                    alt="Photo of clean hotel room bed"
+                />
+            </div>
+        </section>
+
+        <!-- Logos Section -->
+        <section class="container section--spacing">
+            <div class="logo-container">
+                <img
+                    src="./imgs/logos/better-homes.png"
+                    alt="Better homes logo"
+                />
+                <img
+                    src="./imgs/logos/better-tomorrow.jpeg"
+                    alt="A Better Tomorrow logo"
+                />
+                <img src="./imgs/logos/sky.jpg" alt="Sky logo" />
+                <img
+                    src="./imgs/logos/bryant-homes.png"
+                    alt="Bryant Homes logo"
+                />
+                <img
+                    src="./imgs/logos/american-homes.jpg"
+                    alt="American Homes logo"
+                />
+                <img
+                    src="./imgs/logos/interior-architects.jpeg"
+                    alt="Interior Architects logo"
+                />
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section class="container center section--spacing">
+            <h2 class="title--h2 title--spacing">Our Products</h2>
+            <p class="description">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or randomised words which don't look even
+                slightly believable.
+            </p>
+            <div class="products-container">
+                <div class="product">
+                    <img
+                        src="./imgs/products/product-1.jpg"
+                        alt="Photo of a room with a bed"
+                    />
+                    <div class="product-info">
+                        <h4>Nullam Bed</h4>
+                        <h4 class="text--green">$250.00</h4>
+                    </div>
+                </div>
+                <div class="product">
+                    <img
+                        src="./imgs/products/product-2.jpg"
+                        alt="Photo of a sofa in a room"
+                    />
+                    <div class="product-info">
+                        <h4>Aenean Sofa</h4>
+                        <h4 class="text--green">$580.78</h4>
+                    </div>
+                </div>
+                <div class="product">
+                    <img
+                        src="./imgs/products/product-3.jpg"
+                        alt="Photo of a table in a room"
+                    />
+                    <div class="product-info">
+                        <h4>Lorem Table</h4>
+                        <h4 class="text--green">$65.00</h4>
+                    </div>
+                </div>
+            </div>
+            <button class="btn">View All</button>
+        </section>
+
+        <!-- About Us Section -->
+        <section class="container section--spacing">
+            <div class="about-content">
+                <h2 class="tiitle--h2 title--spacing">About Us</h2>
+                <p class="description">
+                    There are many variations of passages of Lorem Ipsum
+                    available, but the majority have suffered alteration in some
+                    form, by injected humour, or randomised words which don't
+                    look even slightly believable.<br /><br />If you are going
+                    to use a passage of Lorem Ipsum, you need to be sure there
+                    isn't anything embarrassing hidden in the middle of text.
+                </p>
+                <button class="btn">Read More</button>
+            </div>
+            <div class="about-img-container">
+                <img
+                    src="./imgs/about-us.jpg"
+                    alt="Photo of room with couch, sofa and table with plants"
+                />
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="container section--spacing center">
+            <h2 class="title--h2 title--spacing">Newsletter</h2>
+            <p class="description">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form.
+            </p>
+            <div>
+                <input
+                    class="search-input"
+                    type="email"
+                    placeholder="Your email address."
+                />
+                <button class="btn">Subscribe</button>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="brand brand--spacing text--white center">
+                Aro<span class="text--green">ma</span>
+            </div>
+            <ul class="footer__links">
+                <li><a href="#0" class="text--green">Home</a></li>
+                <li><a href="#0">Products</a></li>
+                <li><a href="#0">About Us</a></li>
+                <li><a href="#0">Contact Us</a></li>
+                <li><a href="#0">Sign Up</a></li>
+            </ul>
+        </footer>
+    </body>
 </html>
